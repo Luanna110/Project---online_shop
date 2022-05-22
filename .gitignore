@@ -1,3 +1,4 @@
 .idea
 venv
 DjangoVENV/
+db.sqlite3
