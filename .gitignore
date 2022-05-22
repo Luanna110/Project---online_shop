@@ -2,3 +2,4 @@
 venv
 DjangoVENV/
 db.sqlite3
+__pycache__
