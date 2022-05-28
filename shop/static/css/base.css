@@ -12,25 +12,34 @@ h1, h2, h3, h4, h5 , h6 {
 
 a {
     text-decoration:none;
-    color:#5993bb;
+    color:#8d8d8d;
 }
 
 a:hover {
-    color:#77b6e2;
+    color:#000000;
 }
 
 a.button, input[type="submit"] {
     color:#fff;
-    background:#5993bb;
+    background:#8d8d8d;
     border-radius:4px;
     padding:10px 20px;
     font-size:14px;
     border:0;
 }
 
+a.button, input[type="submit"]:hover {
+    background:#2f2f2f;
+}
+
 a.button.light {
     color:#666;
     background:#ededed;
+}
+
+a.button.light:hover {
+    color:#ececec;
+    background:#5e5e5e;
 }
 
 .text-left {
@@ -63,7 +72,7 @@ tbody tr.subtotal {
 }
 
 thead th, tbody tr.total {
-    background:#5993bb;
+    background:#5e5e5e;
     color:#fff;
     font-weight:bold;
 }
@@ -123,8 +132,8 @@ ul.errorlist {
 }
 
 #subheader {
-    background:#ececec;
-    color:#444;
+    background:#464646;
+    color:#ececec;
     padding:15px 100px;
     overflow:auto;
 }
@@ -135,6 +144,10 @@ ul.errorlist {
     color:#333;
     font-size:22px;
     margin-right:10%;
+}
+
+#header .logo:hover {
+    color:#767676;
 }
 
 #subheader .cart {
@@ -169,8 +182,12 @@ ul.errorlist {
 }
 
 #sidebar ul li.selected {
-    background:#5993bb;
+    background:#464646;
     border-radius:4px;
+}
+
+#sidebar ul li.selected:hover {
+    background:#a5a5a5;
 }
 
 #sidebar ul li.selected a {
@@ -193,7 +210,8 @@ ul.errorlist {
 }
 
 .product-list .item img {
-    width:100%;
+    width:100px;
+    height:200px
     margin-bottom:8px;
 }
 
@@ -208,7 +226,8 @@ ul.errorlist {
 }
 
 .product-detail img {
-    width:40%;
+    width:100px;
+    height:200px
     float:left;
     padding:0 20px 20px 0;
 }
@@ -302,6 +321,7 @@ ul.errorlist {
     float:left;
     overflow:auto;
 }
+
 
 .recommendations.cart h3 {
     margin-top:0;
