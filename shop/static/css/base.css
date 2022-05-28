@@ -250,12 +250,12 @@ ul.errorlist {
     width:300px;
     background:#efefef;
     padding:10px 20px;
-    color:#333;
-    border-bottom:4px solid #5993bb;
+    color:#8d8d8d;
+    border-bottom:4px solid #5e5e5e;
 }
 
 .order-info h3 {
-    color:#5993bb;
+    color:#5e5e5e;
 }
 
 .order-info ul li {
