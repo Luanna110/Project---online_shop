@@ -10,7 +10,7 @@ class Order(models.Model):
     postal_code = models.CharField(max_length=20)
     city = models.CharField(max_length=100)
     created = models.CharField(max_length=100)
-    update = models.DateTimeField(auto_now=True)
+    updated = models.DateTimeField(auto_now=True)
     paid = models.BooleanField(default=False)
 
     class Meta:
@@ -24,12 +24,8 @@ class Order(models.Model):
 
 
 class OrderItem(models.Model):
-    order = models.ForeignKey(Order,
-                              related_name='items',
-                              on_delete=models.CASCADE)
-    products = models.ForeignKey(Product,
-                                 related_name='order_items',
-                                 on_delete=models.CASCADE)
+    order = models.ForeignKey(Order, related_name='items', on_delete=models.CASCADE)
+    product = models.ForeignKey(Product, related_name='order_items', on_delete=models.CASCADE)
     price = models.DecimalField(max_digits=10, decimal_places=2)
     quantity = models.PositiveIntegerField(default=1)
 
