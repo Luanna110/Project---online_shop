@@ -37,9 +37,21 @@ a.button.light {
     background:#ededed;
 }
 
+
 a.button.light:hover {
     color:#ececec;
     background:#5e5e5e;
+}
+
+body div form p .helptext {
+    display: inline-block;
+    font-size: 10px;
+    color:#999999;
+}
+body div form ul li {
+    display: inline-block;
+    font-size: 10px;
+    color:#999999;
 }
 
 .text-left {
@@ -115,6 +127,35 @@ form p input {
     border-radius:4px;
 }
 
+.btn {
+    position: absolute;
+    top:50%;
+    background-color:#eeeeee;
+    min-height:30px;
+    min-width: 120px;
+}
+
+.but {
+    position: absolute;
+    bottom:30%;
+    background-color:#eeeeee;
+    min-height:30px;
+    min-width: 120px;
+}
+
+.btn:hover {
+      background-color:#bcbcbc;
+      transition: 0.7s;
+  }
+
+.but:hover {
+      background-color:#bcbcbc;
+      transition: 0.7s;
+  }
+
+
+
+
 ul.errorlist {
    float:left;
    color:#ff0000;
@@ -147,6 +188,18 @@ ul.errorlist {
 }
 
 #header .logo:hover {
+    color:#767676;
+}
+
+#header a.login {
+    font-family: 'Ubuntu', sans-serif;
+    float:right;
+    color:#333;
+    font-size:22px;
+    margin-right:10%;
+}
+
+#header a.login:hover {
     color:#767676;
 }
 
