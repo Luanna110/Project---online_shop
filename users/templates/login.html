@@ -1,10 +1,13 @@
 {% extends "shop/base.html" %}
 
 {% block content %}
-  <h2>Sign in</h2>
+  <h2>Login</h2>
+  <a href="{% url "orders:order_create" %}" class="butt">Buy without account</a>
   <form method="post">
     {% csrf_token %}
     {{ form.as_p }}
+     <a href="/users/sign-up/" class="bttn">Create an account</a>
+
     <button type="submit" class="btn">Login</button>
   </form>
 {% endblock %}

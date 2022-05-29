@@ -97,6 +97,7 @@ table.cart img {
     width:180px;
 }
 
+
 tbody td.num {
     text-align:right;
 }
@@ -126,10 +127,15 @@ form p input {
     color:#666;
     border-radius:4px;
 }
+.bttn {
+    position:fixed;
+    top:65%;
+
+}
 
 .btn {
-    position: absolute;
-    top:50%;
+    position:fixed;
+    top:55%;
     background-color:#eeeeee;
     min-height:30px;
     min-width: 120px;
