@@ -11,9 +11,9 @@ def product_list(request, category_slug=None):
     if category_slug:
         category = get_object_or_404(Category, slug=category_slug)
         products = products.filter(category=category)
-    paginator = Paginator(products, 2)
+    paginator = Paginator(products, 4)
     page_number = request.GET.get('page')
-   # page_obj = paginator.get_page(page_number)
+    prod = paginator.get_page(page_number)
     try:
         products = paginator.page(page_number)
     except PageNotAnInteger:

@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5 , h6 {
     font-family: 'Ubuntu', sans-serif; font-weight:normal;
 }
 
+div.paginate {
+    text-align:center;
+}
+
 a {
     text-decoration:none;
     color:#8d8d8d;
@@ -31,6 +35,7 @@ a.button, input[type="submit"] {
 a.button, input[type="submit"]:hover {
     background:#2f2f2f;
 }
+
 
 a.button.light {
     color:#666;
@@ -158,9 +163,6 @@ form p input {
       background-color:#bcbcbc;
       transition: 0.7s;
   }
-
-
-
 
 ul.errorlist {
    float:left;

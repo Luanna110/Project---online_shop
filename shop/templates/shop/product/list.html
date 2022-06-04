@@ -31,33 +31,23 @@
         ${{ product.price }}
       </div>
     {% endfor %}
+
   </div>
 
+  <div class="paginate">
 
-    <div class="pagination">
-
-      {% if products.has_previous %}
-        <a href="?page=1">&laquo First</a>
-        <a class="page-link" href="?page={{ products.previous_page_number }}">Previous</a>
-      {% endif %}
+    {% if products.has_previous %}
+      <a href="?page=1">  First </a>
+      <a href="?page={{ products.previous_page_number }}"> Previous </a>
+    {% endif %}
 
       Page {{ products.number }} of {{ products.paginator.num_pages }}
-  <!--        {% for p in products.paginator.page_range %}-->
-  <!--          {% if products.number == p %}-->
-  <!--            <span class="current active">-->
-  <!--              <a href="?page={{ p }}">{{ p }}</a>-->
-  <!--            </span>-->
-  <!--          {% else %}-->
-  <!--            <span class="current">-->
-  <!--              <a href="?page={{ p }}">{{ p }}</a>-->
-  <!--            </span>-->
-  <!--          {% endif %}-->
-  <!--        {% endfor %}-->
 
-      {% if products.has_next %}
-        <a class="page-link" href="?page={{ products.next_page_number }}">Next</a>
-        <a class="page-link" href="?page={{ products.paginator.num_pages}}">Last &raquo</a>
-      {% endif %}
-    </div>
+    {% if products.has_next %}
+      <a href="?page={{ products.next_page_number }}"> Next </a>
+      <a href="?page={{ products.paginator.num_pages }}"> Last  &raquo </a>
+    {% endif %}
+  </div>
+
 
 {% endblock %}
