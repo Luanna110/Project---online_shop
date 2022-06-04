@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'orders.apps.OrdersConfig',
     'users',
-    'payment.apps.PaymentConfig',
+    'payment.apps.PaymentConfig',]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
