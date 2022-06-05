@@ -59,7 +59,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Shop design created using Django freemwork. The store has the basic functionalities of the online store. The store has an administrator panel, the ability to set up and log in by the user, a basket, and a form of card payment.
+Shop design created using Django framework. The store has the basic functionalities of the online store. The store has an administrator panel, the ability to set up and log in by the user, a cart, and a form of card payment.
 
 
 ### Built With
@@ -108,8 +108,8 @@ The application was created for exercise purposes. We were supposed to use the k
 ## Contact
 * Marek Maślany
 * Tomasz Synak
-* Anna
-* Ola
+* Anna Chłusewicz
+* Ola Walczyńska
 
 
 
